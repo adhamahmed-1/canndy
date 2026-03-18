@@ -7,14 +7,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:wght@300;400;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet"/>
 <style>
   :root {
-    --red: #C0001A;
-    --red-light: #E8002A;
+    --red: #cf1515;
+    --red-light: #cf1515;
     --red-pale: #FFE8EC;
     --cream: #FAF6F1;
     --white: #FFFFFF;
     --pink: #F9C6CC;
     --text: #1a0005;
     --text-mid: #5c1020;
+    --red-logo: #C0001A;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -84,7 +85,7 @@
   .nav-logo {
     font-family: 'Dancing Script', cursive;
     font-size: 32px;
-    color: var(--red);
+    color: var(--red-logo);
     text-decoration: none;
     cursor: none;
   }
@@ -132,27 +133,29 @@
   .logo-big {
     font-family: 'Dancing Script', cursive;
     font-size: clamp(72px, 9vw, 116px);
-    color: var(--red);
+    color: var(--red-logo);
     line-height: 1;
     letter-spacing: -2px;
     animation: fadeUp 0.9s cubic-bezier(.22,.68,0,1.2) both;
   }
   .logo-sub {
-    font-size: clamp(15px, 1.8vw, 20px);
+    font-size: clamp(16px, 2vw, 22px);
     letter-spacing: 0.4em;
     text-transform: uppercase;
     color: var(--text-mid);
     margin-top: 8px;
+    font-weight: 600;
     animation: fadeUp 1s 0.2s both;
   }
   .hero-tagline {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(17px, 2vw, 25px);
+    font-size: clamp(18px, 2.2vw, 28px);
     color: var(--text-mid);
     margin-top: 36px;
     line-height: 1.55;
     max-width: 380px;
     font-style: italic;
+    font-weight: 600;
     animation: fadeUp 1s 0.4s both;
   }
   .hero-btns {
@@ -226,12 +229,12 @@
   }
   .section-header { text-align: center; margin-bottom: 64px; }
   .label {
-    font-size: 11px; letter-spacing: 0.4em;
-    text-transform: uppercase; color: var(--red); margin-bottom: 10px;
+    font-size: 12px; letter-spacing: 0.4em;
+    text-transform: uppercase; color: var(--red); margin-bottom: 10px; font-weight: 700;
   }
   .title {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(30px, 4vw, 50px); color: var(--text); line-height: 1.15;
+    font-size: clamp(32px, 4.5vw, 56px); color: var(--text); line-height: 1.15; font-weight: 700;
   }
 
   .grid {
@@ -252,14 +255,14 @@
   .card:hover .card-img img { transform: scale(1.08); }
   .card-body { padding: 26px 26px 30px; }
   .card-name {
-    font-family: 'Playfair Display', serif; font-size: 21px;
-    color: var(--text); margin-bottom: 8px;
+    font-family: 'Playfair Display', serif; font-size: 23px;
+    color: var(--text); margin-bottom: 8px; font-weight: 700;
   }
-  .card-desc { font-size: 15px; color: var(--text-mid); line-height: 1.65; margin-bottom: 20px; }
+  .card-desc { font-size: 16px; color: var(--text-mid); line-height: 1.65; margin-bottom: 20px; font-weight: 500; }
   .card-foot { display: flex; align-items: center; justify-content: space-between; }
   .price {
     font-family: 'Playfair Display', serif;
-    font-size: 26px; font-weight: 700; color: var(--red);
+    font-size: 28px; font-weight: 700; color: var(--red);
   }
   .price sub {
     font-size: 13px; font-family: 'Cormorant Garamond', serif;
@@ -282,7 +285,7 @@
   }
   .why .label { color: var(--pink); }
   .why .title { color: white; }
-  .why-text { margin-top: 22px; font-size: 17px; line-height: 1.8; color: rgba(255,255,255,0.82); max-width: 400px; }
+  .why-text { margin-top: 22px; font-size: 18px; line-height: 1.8; color: rgba(255,255,255,0.82); max-width: 400px; font-weight: 500; }
   .features { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
   .feature {
     background: rgba(255,255,255,0.1);
@@ -292,8 +295,8 @@
   }
   .feature:hover { background: rgba(255,255,255,0.18); transform: translateY(-4px); }
   .feature-icon { font-size: 30px; margin-bottom: 12px; display: block; }
-  .feature h4 { font-family: 'Playfair Display', serif; font-size: 16px; margin-bottom: 6px; }
-  .feature p { font-size: 14px; color: rgba(255,255,255,0.72); line-height: 1.6; }
+  .feature h4 { font-family: 'Playfair Display', serif; font-size: 17px; margin-bottom: 6px; font-weight: 700; }
+  .feature p { font-size: 15px; color: rgba(255,255,255,0.72); line-height: 1.6; font-weight: 500; }
 
   /* STORY */
   .story {
@@ -320,9 +323,9 @@
   }
   .story-quote p {
     font-family: 'Playfair Display', serif; font-style: italic;
-    font-size: 19px; color: var(--text); line-height: 1.55;
+    font-size: 21px; color: var(--text); line-height: 1.55; font-weight: 600;
   }
-  .story-body { margin-top: 24px; font-size: 17px; line-height: 1.8; color: var(--text-mid); }
+  .story-body { margin-top: 24px; font-size: 18px; line-height: 1.8; color: var(--text-mid); font-weight: 500; }
 
   /* CONTACT */
   .contact {
@@ -342,8 +345,8 @@
     width: 54px; height: 54px; background: var(--red); border-radius: 50%;
     display: flex; align-items: center; justify-content: center; font-size: 24px;
   }
-  .ccard h4 { font-family: 'Playfair Display', serif; font-size: 17px; color: var(--text); }
-  .ccard p { font-size: 15px; color: var(--text-mid); }
+  .ccard h4 { font-family: 'Playfair Display', serif; font-size: 18px; color: var(--text); font-weight: 700; }
+  .ccard p { font-size: 16px; color: var(--text-mid); font-weight: 500; }
 
   /* FOOTER */
   footer {
