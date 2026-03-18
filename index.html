@@ -7,8 +7,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:wght@300;400;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet"/>
 <style>
   :root {
-    --red: #cf1515;
-    --red-light: #cf1515;
+    --red: #a10e0e;
+    --red-light: #a10e0e;
     --red-pale: #FFE8EC;
     --cream: #FAF6F1;
     --white: #FFFFFF;
@@ -94,7 +94,7 @@
   }
   .nav-links a {
     font-size: 14px; letter-spacing: 0.15em; text-transform: uppercase;
-    color: var(--text-mid); text-decoration: none; position: relative; padding-bottom: 4px; cursor: none;
+    color: var(--text-mid); text-decoration: none; position: relative; padding-bottom: 4px; cursor: none; font-weight: 600;
   }
   .nav-links a::after {
     content: ''; position: absolute; bottom: 0; left: 0;
@@ -106,7 +106,7 @@
     background: var(--red); color: white; border: none;
     padding: 11px 28px; font-family: 'Cormorant Garamond', serif;
     font-size: 14px; letter-spacing: 0.1em; cursor: none;
-    text-decoration: none; transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; font-weight: 700;
   }
   .nav-cta:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(192,0,26,0.3); }
 
@@ -132,30 +132,31 @@
   }
   .logo-big {
     font-family: 'Dancing Script', cursive;
-    font-size: clamp(72px, 9vw, 116px);
+    font-size: clamp(80px, 10vw, 128px);
     color: var(--red-logo);
     line-height: 1;
     letter-spacing: -2px;
     animation: fadeUp 0.9s cubic-bezier(.22,.68,0,1.2) both;
+    font-weight: 700;
   }
   .logo-sub {
-    font-size: clamp(16px, 2vw, 22px);
+    font-size: clamp(18px, 2.2vw, 24px);
     letter-spacing: 0.4em;
     text-transform: uppercase;
     color: var(--text-mid);
     margin-top: 8px;
-    font-weight: 600;
+    font-weight: 700;
     animation: fadeUp 1s 0.2s both;
   }
   .hero-tagline {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(18px, 2.2vw, 28px);
+    font-size: clamp(20px, 2.4vw, 32px);
     color: var(--text-mid);
     margin-top: 36px;
     line-height: 1.55;
     max-width: 380px;
     font-style: italic;
-    font-weight: 600;
+    font-weight: 700;
     animation: fadeUp 1s 0.4s both;
   }
   .hero-btns {
@@ -165,18 +166,18 @@
   .btn-red {
     background: var(--red); color: white; border: none;
     padding: 15px 36px; font-family: 'Cormorant Garamond', serif;
-    font-size: 15px; letter-spacing: 0.1em; cursor: none;
+    font-size: 16px; letter-spacing: 0.1em; cursor: none;
     text-decoration: none; transition: transform 0.2s, box-shadow 0.2s;
-    display: inline-block;
+    display: inline-block; font-weight: 700;
   }
   .btn-red:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(192,0,26,0.28); }
   .btn-ghost {
     background: transparent; color: var(--red);
     border: 1.5px solid var(--red); padding: 15px 36px;
-    font-family: 'Cormorant Garamond', serif; font-size: 15px;
+    font-family: 'Cormorant Garamond', serif; font-size: 16px;
     letter-spacing: 0.1em; cursor: none; text-decoration: none;
     transition: background 0.25s, color 0.25s, transform 0.2s;
-    display: inline-block;
+    display: inline-block; font-weight: 700;
   }
   .btn-ghost:hover { background: var(--red); color: white; transform: translateY(-2px); }
 
@@ -229,12 +230,12 @@
   }
   .section-header { text-align: center; margin-bottom: 64px; }
   .label {
-    font-size: 12px; letter-spacing: 0.4em;
-    text-transform: uppercase; color: var(--red); margin-bottom: 10px; font-weight: 700;
+    font-size: 13px; letter-spacing: 0.4em;
+    text-transform: uppercase; color: var(--red); margin-bottom: 10px; font-weight: 800;
   }
   .title {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(32px, 4.5vw, 56px); color: var(--text); line-height: 1.15; font-weight: 700;
+    font-size: clamp(36px, 5vw, 64px); color: var(--text); line-height: 1.15; font-weight: 800;
   }
 
   .grid {
@@ -255,14 +256,14 @@
   .card:hover .card-img img { transform: scale(1.08); }
   .card-body { padding: 26px 26px 30px; }
   .card-name {
-    font-family: 'Playfair Display', serif; font-size: 23px;
-    color: var(--text); margin-bottom: 8px; font-weight: 700;
+    font-family: 'Playfair Display', serif; font-size: 26px;
+    color: var(--text); margin-bottom: 8px; font-weight: 800;
   }
-  .card-desc { font-size: 16px; color: var(--text-mid); line-height: 1.65; margin-bottom: 20px; font-weight: 500; }
+  .card-desc { font-size: 17px; color: var(--text-mid); line-height: 1.65; margin-bottom: 20px; font-weight: 600; }
   .card-foot { display: flex; align-items: center; justify-content: space-between; }
   .price {
     font-family: 'Playfair Display', serif;
-    font-size: 28px; font-weight: 700; color: var(--red);
+    font-size: 32px; font-weight: 800; color: var(--red);
   }
   .price sub {
     font-size: 13px; font-family: 'Cormorant Garamond', serif;
@@ -285,7 +286,7 @@
   }
   .why .label { color: var(--pink); }
   .why .title { color: white; }
-  .why-text { margin-top: 22px; font-size: 18px; line-height: 1.8; color: rgba(255,255,255,0.82); max-width: 400px; font-weight: 500; }
+  .why-text { margin-top: 22px; font-size: 19px; line-height: 1.8; color: rgba(255,255,255,0.82); max-width: 400px; font-weight: 600; }
   .features { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
   .feature {
     background: rgba(255,255,255,0.1);
@@ -295,8 +296,8 @@
   }
   .feature:hover { background: rgba(255,255,255,0.18); transform: translateY(-4px); }
   .feature-icon { font-size: 30px; margin-bottom: 12px; display: block; }
-  .feature h4 { font-family: 'Playfair Display', serif; font-size: 17px; margin-bottom: 6px; font-weight: 700; }
-  .feature p { font-size: 15px; color: rgba(255,255,255,0.72); line-height: 1.6; font-weight: 500; }
+  .feature h4 { font-family: 'Playfair Display', serif; font-size: 19px; margin-bottom: 6px; font-weight: 800; }
+  .feature p { font-size: 16px; color: rgba(255,255,255,0.72); line-height: 1.6; font-weight: 600; }
 
   /* STORY */
   .story {
@@ -323,9 +324,9 @@
   }
   .story-quote p {
     font-family: 'Playfair Display', serif; font-style: italic;
-    font-size: 21px; color: var(--text); line-height: 1.55; font-weight: 600;
+    font-size: 24px; color: var(--text); line-height: 1.55; font-weight: 700;
   }
-  .story-body { margin-top: 24px; font-size: 18px; line-height: 1.8; color: var(--text-mid); font-weight: 500; }
+  .story-body { margin-top: 24px; font-size: 19px; line-height: 1.8; color: var(--text-mid); font-weight: 600; }
 
   /* CONTACT */
   .contact {
@@ -345,8 +346,8 @@
     width: 54px; height: 54px; background: var(--red); border-radius: 50%;
     display: flex; align-items: center; justify-content: center; font-size: 24px;
   }
-  .ccard h4 { font-family: 'Playfair Display', serif; font-size: 18px; color: var(--text); font-weight: 700; }
-  .ccard p { font-size: 16px; color: var(--text-mid); font-weight: 500; }
+  .ccard h4 { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--text); font-weight: 800; }
+  .ccard p { font-size: 17px; color: var(--text-mid); font-weight: 600; }
 
   /* FOOTER */
   footer {
@@ -378,9 +379,9 @@
     .hero { grid-template-columns: 1fr; padding-top: 80px; }
     .hero-left { padding: 50px 24px 30px; }
     .hero-right { padding: 20px 24px 60px; }
-    .logo-big { font-size: clamp(48px, 8vw, 80px); }
-    .logo-sub { font-size: clamp(13px, 1.5vw, 16px); }
-    .hero-tagline { font-size: clamp(15px, 1.8vw, 20px); margin-top: 24px; }
+    .logo-big { font-size: clamp(56px, 8vw, 92px); font-weight: 700; }
+    .logo-sub { font-size: clamp(14px, 1.5vw, 18px); font-weight: 700; }
+    .hero-tagline { font-size: clamp(17px, 1.8vw, 24px); margin-top: 24px; font-weight: 700; }
     .hero-btns { flex-direction: column; gap: 12px; margin-top: 32px; }
     .btn-red, .btn-ghost { padding: 12px 28px; font-size: 14px; width: 100%; text-align: center; }
     .hero-img-frame { width: 100%; max-width: 320px; height: 280px; }
@@ -389,17 +390,17 @@
     
     .products { padding: 50px 20px; }
     .section-header { margin-bottom: 40px; }
-    .title { font-size: clamp(24px, 5vw, 36px); }
+    .title { font-size: clamp(28px, 5vw, 44px); font-weight: 800; }
     .grid { grid-template-columns: 1fr; gap: 24px; max-width: 100%; }
     .card { overflow: visible; }
     .card-img { height: 250px; }
     .card-body { padding: 20px; }
-    .card-name { font-size: 18px; }
-    .card-desc { font-size: 14px; }
-    .price { font-size: 22px; }
+    .card-name { font-size: 20px; font-weight: 800; }
+    .card-desc { font-size: 15px; font-weight: 600; }
+    .price { font-size: 26px; font-weight: 800; }
     
     .why { grid-template-columns: 1fr; padding: 50px 20px; gap: 40px; }
-    .why-text { max-width: 100%; }
+    .why-text { font-size: 16px; font-weight: 600; }
     .features { gap: 16px; }
     
     .story { grid-template-columns: 1fr; padding: 50px 20px; gap: 40px; }
@@ -408,7 +409,7 @@
     .img2 { width: 70%; height: 50%; }
     
     .contact { padding: 60px 20px; }
-    .contact .title { font-size: clamp(24px, 5vw, 36px); }
+    .contact .title { font-size: clamp(28px, 5vw, 44px); font-weight: 800; }
     .contact-cards { gap: 16px; }
     .ccard { padding: 28px 20px; min-width: 160px; }
     .cicon { width: 44px; height: 44px; font-size: 20px; }
@@ -428,11 +429,11 @@
     .hero { padding-top: 70px; }
     .hero-left { padding: 40px 16px 20px; }
     .hero-right { padding: 16px; }
-    .logo-big { font-size: clamp(40px, 7vw, 60px); }
-    .logo-sub { font-size: clamp(12px, 1.3vw, 14px); }
-    .hero-tagline { font-size: clamp(14px, 1.6vw, 18px); margin-top: 16px; }
+    .logo-big { font-size: clamp(48px, 7vw, 72px); font-weight: 700; }
+    .logo-sub { font-size: clamp(13px, 1.3vw, 16px); font-weight: 700; }
+    .hero-tagline { font-size: clamp(16px, 1.6vw, 22px); margin-top: 16px; font-weight: 700; }
     .hero-btns { margin-top: 24px; }
-    .btn-red, .btn-ghost { padding: 11px 24px; font-size: 13px; }
+    .btn-red, .btn-ghost { padding: 11px 24px; font-size: 13px; font-weight: 700; }
     .hero-img-frame { max-width: 280px; height: 240px; }
     .badge { width: 80px; height: 80px; bottom: -12px; left: -12px; font-size: 8px; }
     .badge span { font-size: 8px; }
@@ -441,43 +442,43 @@
     
     .products { padding: 40px 16px; }
     .section-header { margin-bottom: 32px; }
-    .label { font-size: 10px; }
+    .label { font-size: 10px; font-weight: 800; }
     .title { font-size: clamp(20px, 5vw, 28px); }
     .grid { gap: 16px; }
     .card-img { height: 200px; }
     .card-body { padding: 16px; }
-    .card-name { font-size: 16px; margin-bottom: 6px; }
-    .card-desc { font-size: 13px; margin-bottom: 14px; }
-    .price { font-size: 20px; }
+    .card-name { font-size: 17px; font-weight: 800; }
+    .card-desc { font-size: 14px; font-weight: 600; }
+    .price { font-size: 24px; font-weight: 800; }
     .price sub { font-size: 11px; }
     .order-btn { width: 40px; height: 40px; font-size: 18px; }
     
     .why { padding: 40px 16px; gap: 32px; }
-    .why .title { font-size: clamp(20px, 5vw, 28px); }
-    .why-text { font-size: 15px; }
+    .why .title { font-size: clamp(24px, 5vw, 36px); font-weight: 800; }
+    .why-text { font-size: 15px; font-weight: 600; }
     .features { grid-template-columns: 1fr; gap: 12px; }
     .feature { padding: 18px 16px; }
     .feature-icon { font-size: 24px; }
-    .feature h4 { font-size: 14px; }
-    .feature p { font-size: 13px; }
+    .feature h4 { font-size: 16px; font-weight: 800; }
+    .feature p { font-size: 15px; font-weight: 600; }
     
     .story { padding: 40px 16px; gap: 32px; }
     .story-imgs { height: 280px; }
     .img1 { width: 100%; height: 65%; border-radius: 120px 120px 0 0; }
     .img2 { width: 65%; height: 45%; border-radius: 0 0 100px 100px; }
-    .story .title { font-size: clamp(20px, 5vw, 28px); }
+    .story .title { font-size: clamp(24px, 5vw, 36px); font-weight: 800; }
     .story-body { font-size: 15px; margin-top: 16px; }
     .story-quote { margin-top: 16px; padding: 16px 16px; }
-    .story-quote p { font-size: 16px; }
+    .story-quote p { font-size: 17px; font-weight: 700; }
     
     .contact { padding: 40px 16px; }
-    .contact .title { font-size: clamp(20px, 5vw, 28px); }
-    .contact-sub { font-size: 15px; margin-bottom: 32px; }
+    .contact .title { font-size: clamp(20px, 5vw, 32px); font-weight: 800; }
+    .contact-sub { font-size: 15px; margin-bottom: 32px; font-weight: 600; }
     .contact-cards { flex-direction: column; gap: 12px; }
     .ccard { min-width: 100%; padding: 24px 16px; }
     .cicon { width: 40px; height: 40px; font-size: 18px; }
-    .ccard h4 { font-size: 15px; }
-    .ccard p { font-size: 13px; }
+    .ccard h4 { font-size: 16px; font-weight: 800; }
+    .ccard p { font-size: 14px; font-weight: 600; }
     
     footer { padding: 20px 16px; flex-direction: column; text-align: center; gap: 12px; }
     .footer-logo { font-size: 24px; }
@@ -492,9 +493,9 @@
     
     .hero-left { padding: 30px 12px 15px; }
     .hero-right { padding: 12px; }
-    .logo-big { font-size: clamp(32px, 6vw, 48px); letter-spacing: -1px; }
-    .logo-sub { font-size: clamp(11px, 1.2vw, 13px); }
-    .hero-tagline { font-size: clamp(13px, 1.5vw, 16px); margin-top: 12px; max-width: 100%; }
+    .logo-big { font-size: clamp(44px, 7vw, 66px); letter-spacing: -1px; font-weight: 700; }
+    .logo-sub { font-size: clamp(12px, 1.2vw, 15px); font-weight: 700; }
+    .hero-tagline { font-size: clamp(15px, 1.5vw, 20px); margin-top: 12px; max-width: 100%; font-weight: 700; }
     .hero-btns { margin-top: 16px; }
     .btn-red, .btn-ghost { padding: 10px 20px; font-size: 12px; }
     .hero-img-frame { max-width: 240px; height: 200px; }
@@ -505,41 +506,41 @@
     .products { padding: 30px 12px; }
     .section-header { margin-bottom: 24px; }
     .label { font-size: 9px; }
-    .title { font-size: clamp(18px, 5vw, 24px); }
+    .title { font-size: clamp(20px, 5vw, 32px); font-weight: 800; }
     .grid { gap: 12px; }
     .card-img { height: 180px; }
     .card-body { padding: 12px; }
-    .card-name { font-size: 14px; }
-    .card-desc { font-size: 12px; }
-    .price { font-size: 18px; }
+    .card-name { font-size: 20px; font-weight: 800; }
+    .card-desc { font-size: 15px; font-weight: 600; }
+    .price { font-size: 20px; font-weight: 800; }
     .price sub { font-size: 10px; }
     .order-btn { width: 36px; height: 36px; font-size: 16px; }
     
     .why { padding: 30px 12px; gap: 24px; }
-    .why .title { font-size: clamp(18px, 5vw, 24px); line-height: 1.2; }
-    .why-text { font-size: 14px; }
+    .why .title { font-size: clamp(20px, 5vw, 32px); line-height: 1.2; font-weight: 800; }
+    .why-text { font-size: 14px; font-weight: 600; }
     .features { gap: 10px; }
     .feature { padding: 14px 12px; }
     .feature-icon { font-size: 20px; }
-    .feature h4 { font-size: 13px; }
-    .feature p { font-size: 12px; }
+    .feature h4 { font-size: 15px; font-weight: 800; }
+    .feature p { font-size: 14px; font-weight: 600; }
     
     .story { padding: 30px 12px; gap: 24px; }
     .story-imgs { height: 240px; }
     .img1 { width: 100%; height: 60%; border-radius: 100px 100px 0 0; }
     .img2 { width: 60%; height: 40%; }
-    .story .title { font-size: clamp(18px, 5vw, 24px); line-height: 1.2; }
-    .story-body { font-size: 14px; }
+    .story .title { font-size: clamp(20px, 5vw, 32px); line-height: 1.2; font-weight: 800; }
+    .story-body { font-size: 16px; font-weight: 600; }
     .story-quote { margin-top: 12px; padding: 12px 12px; border-left: 2px solid var(--red); }
-    .story-quote p { font-size: 14px; }
+    .story-quote p { font-size: 15px; font-weight: 700; }
     
     .contact { padding: 30px 12px; }
-    .contact .title { font-size: clamp(18px, 5vw, 24px); }
-    .contact-sub { font-size: 14px; margin-bottom: 24px; }
+    .contact .title { font-size: clamp(18px, 5vw, 28px); font-weight: 800; }
+    .contact-sub { font-size: 14px; margin-bottom: 24px; font-weight: 600; }
     .ccard { padding: 16px 12px; }
     .cicon { width: 36px; height: 36px; font-size: 16px; }
-    .ccard h4 { font-size: 13px; }
-    .ccard p { font-size: 12px; }
+    .ccard h4 { font-size: 14px; font-weight: 800; }
+    .ccard p { font-size: 13px; font-weight: 600; }
     
     footer { padding: 16px 12px; }
     .footer-logo { font-size: 20px; }
