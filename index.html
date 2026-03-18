@@ -364,20 +364,196 @@
   }
 
   /* RESPONSIVE */
-  @media (max-width: 900px) {
+  /* Tablet (768px and below) */
+  @media (max-width: 768px) {
     nav { padding: 16px 24px; }
-    .nav-links { display: none; }
-    .hero { grid-template-columns: 1fr; padding-top: 90px; }
-    .hero-left { padding: 60px 28px 40px; }
-    .hero-right { padding: 0 28px 80px; justify-content: flex-start; }
-    .hero-img-frame { width: 100%; height: 300px; }
+    .nav-logo { font-size: 24px; }
+    .nav-links { gap: 24px; }
+    .nav-links a { font-size: 12px; }
+    .nav-cta { padding: 9px 20px; font-size: 12px; }
+    
+    .hero { grid-template-columns: 1fr; padding-top: 80px; }
+    .hero-left { padding: 50px 24px 30px; }
+    .hero-right { padding: 20px 24px 60px; }
+    .logo-big { font-size: clamp(48px, 8vw, 80px); }
+    .logo-sub { font-size: clamp(13px, 1.5vw, 16px); }
+    .hero-tagline { font-size: clamp(15px, 1.8vw, 20px); margin-top: 24px; }
+    .hero-btns { flex-direction: column; gap: 12px; margin-top: 32px; }
+    .btn-red, .btn-ghost { padding: 12px 28px; font-size: 14px; width: 100%; text-align: center; }
+    .hero-img-frame { width: 100%; max-width: 320px; height: 280px; }
     .hero-img-frame img { border-radius: 100px 100px 0 0; }
-    .products { padding: 60px 24px; }
-    .grid { grid-template-columns: 1fr; max-width: 420px; }
-    .why { grid-template-columns: 1fr; padding: 60px 28px; gap: 48px; }
-    .story { grid-template-columns: 1fr; padding: 60px 28px; gap: 48px; }
-    .story-imgs { height: 300px; }
-    footer { padding: 30px 28px; }
+    .badge { width: 90px; height: 90px; bottom: -15px; left: -15px; }
+    
+    .products { padding: 50px 20px; }
+    .section-header { margin-bottom: 40px; }
+    .title { font-size: clamp(24px, 5vw, 36px); }
+    .grid { grid-template-columns: 1fr; gap: 24px; max-width: 100%; }
+    .card { overflow: visible; }
+    .card-img { height: 250px; }
+    .card-body { padding: 20px; }
+    .card-name { font-size: 18px; }
+    .card-desc { font-size: 14px; }
+    .price { font-size: 22px; }
+    
+    .why { grid-template-columns: 1fr; padding: 50px 20px; gap: 40px; }
+    .why-text { max-width: 100%; }
+    .features { gap: 16px; }
+    
+    .story { grid-template-columns: 1fr; padding: 50px 20px; gap: 40px; }
+    .story-imgs { height: 350px; }
+    .img1 { width: 100%; height: 70%; }
+    .img2 { width: 70%; height: 50%; }
+    
+    .contact { padding: 60px 20px; }
+    .contact .title { font-size: clamp(24px, 5vw, 36px); }
+    .contact-cards { gap: 16px; }
+    .ccard { padding: 28px 20px; min-width: 160px; }
+    .cicon { width: 44px; height: 44px; font-size: 20px; }
+    
+    footer { padding: 24px 20px; font-size: 12px; }
+    .footer-logo { font-size: 28px; }
+  }
+
+  /* Mobile (640px and below) */
+  @media (max-width: 640px) {
+    nav { padding: 12px 16px; }
+    .nav-logo { font-size: 20px; }
+    .nav-links { gap: 16px; }
+    .nav-links a { font-size: 11px; }
+    .nav-cta { padding: 8px 16px; font-size: 11px; }
+    
+    .hero { padding-top: 70px; }
+    .hero-left { padding: 40px 16px 20px; }
+    .hero-right { padding: 16px; }
+    .logo-big { font-size: clamp(40px, 7vw, 60px); }
+    .logo-sub { font-size: clamp(12px, 1.3vw, 14px); }
+    .hero-tagline { font-size: clamp(14px, 1.6vw, 18px); margin-top: 16px; }
+    .hero-btns { margin-top: 24px; }
+    .btn-red, .btn-ghost { padding: 11px 24px; font-size: 13px; }
+    .hero-img-frame { max-width: 280px; height: 240px; }
+    .badge { width: 80px; height: 80px; bottom: -12px; left: -12px; font-size: 8px; }
+    .badge span { font-size: 8px; }
+    .badge strong { font-size: 20px; }
+    .marquee-bar { font-size: 11px; padding: 10px 0; }
+    
+    .products { padding: 40px 16px; }
+    .section-header { margin-bottom: 32px; }
+    .label { font-size: 10px; }
+    .title { font-size: clamp(20px, 5vw, 28px); }
+    .grid { gap: 16px; }
+    .card-img { height: 200px; }
+    .card-body { padding: 16px; }
+    .card-name { font-size: 16px; margin-bottom: 6px; }
+    .card-desc { font-size: 13px; margin-bottom: 14px; }
+    .price { font-size: 20px; }
+    .price sub { font-size: 11px; }
+    .order-btn { width: 40px; height: 40px; font-size: 18px; }
+    
+    .why { padding: 40px 16px; gap: 32px; }
+    .why .title { font-size: clamp(20px, 5vw, 28px); }
+    .why-text { font-size: 15px; }
+    .features { grid-template-columns: 1fr; gap: 12px; }
+    .feature { padding: 18px 16px; }
+    .feature-icon { font-size: 24px; }
+    .feature h4 { font-size: 14px; }
+    .feature p { font-size: 13px; }
+    
+    .story { padding: 40px 16px; gap: 32px; }
+    .story-imgs { height: 280px; }
+    .img1 { width: 100%; height: 65%; border-radius: 120px 120px 0 0; }
+    .img2 { width: 65%; height: 45%; border-radius: 0 0 100px 100px; }
+    .story .title { font-size: clamp(20px, 5vw, 28px); }
+    .story-body { font-size: 15px; margin-top: 16px; }
+    .story-quote { margin-top: 16px; padding: 16px 16px; }
+    .story-quote p { font-size: 16px; }
+    
+    .contact { padding: 40px 16px; }
+    .contact .title { font-size: clamp(20px, 5vw, 28px); }
+    .contact-sub { font-size: 15px; margin-bottom: 32px; }
+    .contact-cards { flex-direction: column; gap: 12px; }
+    .ccard { min-width: 100%; padding: 24px 16px; }
+    .cicon { width: 40px; height: 40px; font-size: 18px; }
+    .ccard h4 { font-size: 15px; }
+    .ccard p { font-size: 13px; }
+    
+    footer { padding: 20px 16px; flex-direction: column; text-align: center; gap: 12px; }
+    .footer-logo { font-size: 24px; }
+    footer p { font-size: 11px; }
+  }
+
+  /* Mobile Extra Small (480px and below) */
+  @media (max-width: 480px) {
+    nav { padding: 10px 12px; }
+    .nav-logo { font-size: 18px; }
+    .nav-cta { padding: 7px 14px; font-size: 10px; }
+    
+    .hero-left { padding: 30px 12px 15px; }
+    .hero-right { padding: 12px; }
+    .logo-big { font-size: clamp(32px, 6vw, 48px); letter-spacing: -1px; }
+    .logo-sub { font-size: clamp(11px, 1.2vw, 13px); }
+    .hero-tagline { font-size: clamp(13px, 1.5vw, 16px); margin-top: 12px; max-width: 100%; }
+    .hero-btns { margin-top: 16px; }
+    .btn-red, .btn-ghost { padding: 10px 20px; font-size: 12px; }
+    .hero-img-frame { max-width: 240px; height: 200px; }
+    .badge { width: 70px; height: 70px; bottom: -10px; left: -10px; }
+    .badge strong { font-size: 18px; }
+    .marquee-bar { font-size: 10px; padding: 8px 0; }
+    
+    .products { padding: 30px 12px; }
+    .section-header { margin-bottom: 24px; }
+    .label { font-size: 9px; }
+    .title { font-size: clamp(18px, 5vw, 24px); }
+    .grid { gap: 12px; }
+    .card-img { height: 180px; }
+    .card-body { padding: 12px; }
+    .card-name { font-size: 14px; }
+    .card-desc { font-size: 12px; }
+    .price { font-size: 18px; }
+    .price sub { font-size: 10px; }
+    .order-btn { width: 36px; height: 36px; font-size: 16px; }
+    
+    .why { padding: 30px 12px; gap: 24px; }
+    .why .title { font-size: clamp(18px, 5vw, 24px); line-height: 1.2; }
+    .why-text { font-size: 14px; }
+    .features { gap: 10px; }
+    .feature { padding: 14px 12px; }
+    .feature-icon { font-size: 20px; }
+    .feature h4 { font-size: 13px; }
+    .feature p { font-size: 12px; }
+    
+    .story { padding: 30px 12px; gap: 24px; }
+    .story-imgs { height: 240px; }
+    .img1 { width: 100%; height: 60%; border-radius: 100px 100px 0 0; }
+    .img2 { width: 60%; height: 40%; }
+    .story .title { font-size: clamp(18px, 5vw, 24px); line-height: 1.2; }
+    .story-body { font-size: 14px; }
+    .story-quote { margin-top: 12px; padding: 12px 12px; border-left: 2px solid var(--red); }
+    .story-quote p { font-size: 14px; }
+    
+    .contact { padding: 30px 12px; }
+    .contact .title { font-size: clamp(18px, 5vw, 24px); }
+    .contact-sub { font-size: 14px; margin-bottom: 24px; }
+    .ccard { padding: 16px 12px; }
+    .cicon { width: 36px; height: 36px; font-size: 16px; }
+    .ccard h4 { font-size: 13px; }
+    .ccard p { font-size: 12px; }
+    
+    footer { padding: 16px 12px; }
+    .footer-logo { font-size: 20px; }
+    footer p { font-size: 10px; }
+  }
+
+  /* Large Screens (1200px and above) */
+  @media (min-width: 1200px) {
+    nav { padding: 20px 80px; }
+    .nav-links { gap: 50px; }
+    
+    .products { padding: 120px 100px; }
+    .grid { grid-template-columns: repeat(3, 1fr); gap: 40px; max-width: 1300px; }
+    
+    .why { padding: 120px 100px; gap: 100px; }
+    .story { padding: 120px 100px; gap: 120px; }
+    footer { padding: 40px 100px; }
   }
 </style>
 </head>
